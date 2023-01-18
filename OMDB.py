@@ -8,7 +8,7 @@ from info import API_KEY
 def get_movie_info(query):    
     try:
        url = f'https://api.safone.me/tmdb?query={query}'
-       resp = requests.get(url).json()['results']
+       resp = requests.get(url).json()['results'][0]
        poster=resp['poster']
        id=resp['imdbID']
        text=f"""📀 𝖳𝗂𝗍𝗅𝖾 : <b><u>{resp['title']}</u></b>
