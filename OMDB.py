@@ -7,7 +7,7 @@ from info import API_KEY
 
 def get_movie_info(query):    
     try:
-       url = f'http://www.omdbapi.com/?apikey={API_KEY}&t={query}'
+       url = f'https://api.safone.me/tmdb?query={query}'
        resp = requests.get(url).json()['results']
        poster=resp['poster']
        id=resp['imdbID']
