@@ -28,7 +28,7 @@ def get_movie_info(query):
 📝 𝖶𝗋𝗂𝗍𝖾𝗋𝗌 : <b>{resp['Status']}</b>
 🔆 𝖲𝗍𝖺𝗋𝗌 : <b>{resp['Status']}</b>
 
-🗒 𝖯𝗅𝗈𝗍 : <code>{resp['thumbnail_path']}</code>"""
+🗒 𝖯𝗅𝗈𝗍 : <code>{resp['Status']}</code>"""
 
     except Exception as error:
         print(error)
