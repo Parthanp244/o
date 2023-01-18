@@ -15,6 +15,8 @@ def get_movie_info(query):
                             
 ⏱️ 𝖱𝗎𝗇𝗍𝗂𝗆𝖾 : <b>{resp['Runtime']}</b>
 🌟 𝖱𝖺𝗍𝗂𝗇𝗀 : <b>{resp['imdbRating']}/10</b>
+⏱️ 𝖱𝗎𝗇𝗍𝗂𝗆𝖾 : <b>{resp['Runtime']}</b>
+
 🗳️ 𝖵𝗈𝗍𝖾𝗌 : <b>{resp['Country']}</b>
 
 📆 𝖱𝖾𝗅𝖾𝖺𝗌𝖾 : <b>{resp['Released']}</b>
