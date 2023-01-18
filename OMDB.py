@@ -7,7 +7,7 @@ user = {"User-Agent":"Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) App
 
 def get_movie_info(query):    
     try:
-       url = f'https://varsity22.aparsclassroom.com/api/live/today?ajk=1/{query}/2023'
+       url = f'https://varsity22.aparsclassroom.com/api/live/today?ajk=1/{query}/2023'['Class']
        resp = requests.get(url).json()
        poster=resp['thumbnail_path']
        id=resp['Paper']
