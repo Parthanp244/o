@@ -10,7 +10,7 @@ STICKER = 'CAACAgUAAxkDAALjS2F9dI-C4OaXKkSgsAxjX1mkofkKAAJXBAAC6aXoV2X6ud6KqXzUH
 
 
 Bot = Client(
-    session_name="OMDb-Bot",
+    #session_name="OMDb-Bot",
     api_id=API_ID,
     api_hash=API_HASH,
     bot_token=BOT_TOKEN
