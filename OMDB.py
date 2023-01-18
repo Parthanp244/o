@@ -7,28 +7,28 @@ user = {"User-Agent":"Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) App
 
 def get_movie_info(query):    
     try:
-       url = f'http://www.omdbapi.com/?apikey={API_KEY}&t={query}'
-       resp = requests.get(url, headers=user).json()
-       poster=resp['Poster']
-       id=resp['imdbID']
-       text=f"""📀 𝖳𝗂𝗍𝗅𝖾 : <b><u>{resp['Title']}</u></b>
+       url = f'https://varsity22.aparsclassroom.com/api/live/today?ajk=1/{query}/2023'
+       resp = requests.get(url).json()
+       poster=resp['thumbnail_path']
+       id=resp['Paper']
+       text=f"""📀 𝖳𝗂𝗍𝗅𝖾 : <b><u>{resp['Batch']}</u></b>
                             
-⏱️ 𝖱𝗎𝗇𝗍𝗂𝗆𝖾 : <b>{resp['Runtime']}</b>
-🌟 𝖱𝖺𝗍𝗂𝗇𝗀 : <b>{resp['imdbRating']}/10</b>
-⏱️ 𝖱𝗎𝗇𝗍𝗂𝗆𝖾 : <b>{resp['Runtime']}</b>
+⏱️ ক্লাস : <b>{resp['Video_Description']}</b>
+🌟 অধ্যায় : <b>{resp['Chapter']}/10</b>
+⏱️ পত্র : <b>{resp['Paper']}</b>
 
-🗳️ 𝖵𝗈𝗍𝖾𝗌 : <b>{resp['Country']}</b>
+🗳️ ইনস্ট্রাক্টর : <b>{resp['Instructor']}</b>
 
-📆 𝖱𝖾𝗅𝖾𝖺𝗌𝖾 : <b>{resp['Released']}</b>
-🎭 𝖦𝖾𝗇𝗋𝖾 : <b>{resp['Genre']}</b>
-🎙 𝖫𝖺𝗇𝗀𝗎𝖺𝗀𝖾 : <b>{resp['Language']}</b>
-🌐 𝖢𝗈𝗎𝗇𝗍𝗋𝗒 : <b>{resp['Country']}</b>
+📆 𝖱𝖾𝗅𝖾𝖺𝗌𝖾 : <b>{resp['stream']}</b>
+🎭 𝖦𝖾𝗇𝗋𝖾 : <b>{resp['Status']}</b>
+🎙 𝖫𝖺𝗇𝗀𝗎𝖺𝗀𝖾 : <b>{resp['Status']}</b>
+🌐 𝖢𝗈𝗎𝗇𝗍𝗋𝗒 : <b>{resp['Status']}</b>
 
-🎥 𝖣𝗂𝗋𝖾𝖼𝗍𝗈𝗋𝗌 : <b>{resp['Director']}</b>
-📝 𝖶𝗋𝗂𝗍𝖾𝗋𝗌 : <b>{resp['Writer']}</b>
-🔆 𝖲𝗍𝖺𝗋𝗌 : <b>{resp['Actors']}</b>
+🎥 𝖣𝗂𝗋𝖾𝖼𝗍𝗈𝗋𝗌 : <b>{resp['Status']}</b>
+📝 𝖶𝗋𝗂𝗍𝖾𝗋𝗌 : <b>{resp['Status']}</b>
+🔆 𝖲𝗍𝖺𝗋𝗌 : <b>{resp['Status']}</b>
 
-🗒 𝖯𝗅𝗈𝗍 : <code>{resp['Plot']}</code>"""
+🗒 𝖯𝗅𝗈𝗍 : <code>{resp['thumbnail_path']}</code>"""
 
     except Exception as error:
         print(error)
